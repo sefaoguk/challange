@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    background-color: #606368;
+    height: 15%;
+ 
+}
+.body{
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+
+}
+.body-side {
+    position: relative;
+    background-color: #353535;
+    width: 25%;
+    min-width: 250px;
+    overflow: scroll;
+}
+.body-main {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #3c4042;
+    overflow: scroll;
+
+}
+.body-main .image{
+    object-fit:cover;
+}
+.body-main .card{
+    width: 23%;
+
+}
+.footer {
+    display: flex;
+    background-color: #202124;
+    height: 30%;
+    overflow-x: scroll;
+
+}
+.footer *{
+    width: auto;
+}
+.button{
+    
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    position:absolute;
+    right: 0px;
+    
+}
+.card {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    height: auto;
+    width: auto;
+}
+.delete{
+    float:right;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    position:absolute;
+}
+.image{
+ 
+  object-fit: cover;
+}
