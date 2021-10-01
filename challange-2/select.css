@@ -1,0 +1,49 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(252, 255, 227, 0.329);
+}
+.select{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-top: 3%;
+    height: 20%;
+}
+.bocek, .cicek{
+    width: 40%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.bocek span, .cicek span{
+    border: 2px solid gray;
+    padding: 10px;
+    width: auto;
+}
+.check:checked + .menu-content{
+ display:inline-block;
+ 
+}
+.check{
+    display: none;
+}
+.menu-content{
+    padding: 0;
+    display: none;
+}
+.item {
+    list-style: none;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    padding: 5px;
+}
+.item:last-child{
+    border-bottom: 2px solid gray;
+}
+.item:hover{
+    background-color: turquoise;
+    color: white;
+}
