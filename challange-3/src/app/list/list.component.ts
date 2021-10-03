@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-list',
@@ -8,12 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class ListComponent implements OnInit {
 
   constructor() { }
+  @Output() listOutput = new EventEmitter();
+  @Input() listInput:any;
 
   ngOnInit(): void {
   }
 
-  add(){
-    
+
+  addItem() {
+
+    this.listOutput.emit()
+   // console.log(this.listInput)
   }
+
 
 }

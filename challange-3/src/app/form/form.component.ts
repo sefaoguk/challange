@@ -1,4 +1,5 @@
-import { Component, OnInit , Output, EventEmitter, Input} from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 
 
@@ -9,21 +10,27 @@ import { Component, OnInit , Output, EventEmitter, Input} from '@angular/core';
 })
 
 export class FormComponent implements OnInit {
-  @Output() data= new EventEmitter();
-  constructor() { }
 
-  
-  valueFirst:any;
-  valueLast:any;
+  constructor() { }
+  @Output() formOutput = new EventEmitter();
+  @Input() formInput:any=[];
+  firstName: any;
+  lastName: any;
+
+
 
   ngOnInit(): void {
   }
-  get(){
-    
-    this.data.emit()
+
+  input() {
+    // this.data=[this.firstName,this.lastName]
+    // console.log(this.data)
+    this.formInput.push(this.firstName,this.lastName);
+    this.formOutput.emit(this.formInput)
+    //this.formOutput.emit(this.formInput)
   }
-  deleteAll(){
-    console.log(this.valueFirst,this.valueLast)
+  clear(){
+   
   }
 
 

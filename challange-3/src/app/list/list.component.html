@@ -1,6 +1,6 @@
 <div class="container">
     <div class="button">
-        <button mat-raised-button color="primary" (click)="add()">Add User From Uppser From</button>
+        <button mat-raised-button color="primary" (click)="addItem()" >Add User From Uppser From</button>
     </div>
     <div class="list">
         <mat-list role="list">
@@ -8,8 +8,10 @@
                 <mat-list-item role="listitem">First Name</mat-list-item>
                 <mat-list-item role="listitem">Last Name</mat-list-item>
             </div>
-            <mat-list-item role="listitem">Item 3</mat-list-item>
+            <div class="list-item" >
+                <mat-list-item role="listitem" *ngFor="let item of listInput">{{item}}</mat-list-item>
+            </div>
+            
         </mat-list>
     </div>
-
 </div>

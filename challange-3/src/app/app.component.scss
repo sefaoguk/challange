@@ -14,5 +14,8 @@ body,html{
     .list-container{
         width:40%;
         display: flex;
+        app-list{
+            width: 100%;
+        }
     }
 }

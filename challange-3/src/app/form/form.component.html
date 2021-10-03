@@ -1,13 +1,13 @@
 <div class="container">
     <mat-form-field>
         <mat-label> First Name</mat-label>
-        <input matInput>
+        <input matInput [(ngModel)]="firstName">
     </mat-form-field>
     <mat-form-field>
         <mat-label> Last Name</mat-label>
-        <input matInput>
+        <input matInput [(ngModel)]="lastName">
     </mat-form-field>
     <div class="button">
-        <button mat-raised-button color="primary" (click)="deleteAll">Tüm Listeleri Temizle</button>
+        <button mat-raised-button color="primary" (click)="input()">Tüm Listeleri Temizle</button>
     </div>
 </div>

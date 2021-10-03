@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +8,19 @@ import { Component,Input } from '@angular/core';
 export class AppComponent {
   title = 'challange3';
 
+  formData: any;
 
-  addItem(){
-    
+
+
+
+  addItem() {
+    //console.log('AddItem: ' + datas)
+    //console.log(this.formData)
   }
+  formValue(value:any)
+  {
+    console.log(value)
+    this.formData=value
+  }
+
 }
