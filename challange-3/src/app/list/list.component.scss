@@ -7,19 +7,26 @@
             width: 95%;
         }
     }
-}
-.list{
-  width:100%;
-    .list-title{
+    .list {
+        width:100%;
         display: flex;
         justify-content: space-around;
-        width: 100%;
-        mat-list-item{
-            width: auto;
+        .mat-list-base {
+            width: 90%;
         }
-    }
-    .list-item{
-        width: 100%;
-        display: flex;
+        .list-title{
+            display: flex;
+            width: 100%;
+            font-weight: bold;
+            mat-list-item {
+                width: 50%;
+                font-size: 18px;
+            }
+        }
+        .list-item {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
 }

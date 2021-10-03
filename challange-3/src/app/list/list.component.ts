@@ -8,18 +8,14 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 export class ListComponent implements OnInit {
 
   constructor() { }
-  @Output() listOutput = new EventEmitter();
-  @Input() listInput:any;
+  @Input() listData:any;
 
   ngOnInit(): void {
+
   }
 
 
-  addItem() {
 
-    this.listOutput.emit()
-   // console.log(this.listInput)
-  }
 
 
 }

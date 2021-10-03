@@ -7,7 +7,12 @@
         <mat-label> Last Name</mat-label>
         <input matInput [(ngModel)]="lastName">
     </mat-form-field>
-    <div class="button">
-        <button mat-raised-button color="primary" (click)="input()">Tüm Listeleri Temizle</button>
+    <div class="button-delete">
+        <button mat-raised-button color="primary" (click)="listDelete()">Tüm Listeleri Temizle</button>
     </div>
+    <div class="button-add">
+        <button mat-raised-button color="primary" (click)="listAdd()" >Add User From Uppser From</button>
+        <button mat-raised-button color="primary" (click)="listAdd()">Add User From Uppser From</button>
+    </div>
+
 </div>
